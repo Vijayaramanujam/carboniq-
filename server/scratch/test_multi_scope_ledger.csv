@@ -1,0 +1,6 @@
+Date,Category,Scope,Supplier,Description,Quantity,Unit,Amount
+2026-03-01,Fuel,Scope 1,Bharat Petroleum,Diesel for DG Generator Set,100,Liters,9000
+2026-03-05,Electricity,Scope 2,Tata Power,Facility Grid Power Consumption,500,kWh,4500
+2026-03-10,Transportation,Scope 3,Blue Dart Logistics,Intercity Freight Trucking,250,km,7500
+2026-03-15,Waste,Scope 3,GreenRecycle Solutions,Scrap metal recycling circular offset,80,kg,1200
+2026-03-20,Supplier Spend,Scope 3,OfficeMart Supplies,Ergonomic office furniture procurement,,INR,42000

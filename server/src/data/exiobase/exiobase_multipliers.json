@@ -1,0 +1,1986 @@
+[
+  {
+    "sectorIndex": 0,
+    "sectorCode": "in_paddy_rice",
+    "sectorName": "Paddy rice",
+    "category": "AGRICULTURE",
+    "directIntensityInr": 0.0260059,
+    "totalMultiplierInr": 0.0364083,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 1,
+    "sectorCode": "in_wheat",
+    "sectorName": "Wheat",
+    "category": "AGRICULTURE",
+    "directIntensityInr": 0.0088879,
+    "totalMultiplierInr": 0.0124431,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 2,
+    "sectorCode": "in_cereal_grains_nec",
+    "sectorName": "Cereal grains nec",
+    "category": "AGRICULTURE",
+    "directIntensityInr": 0.0090344,
+    "totalMultiplierInr": 0.0126482,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 3,
+    "sectorCode": "in_vegetables_fruit_nuts",
+    "sectorName": "Vegetables, fruit, nuts",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0041283,
+    "totalMultiplierInr": 0.0097014,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 4,
+    "sectorCode": "in_oil_seeds",
+    "sectorName": "Oil seeds",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0152064,
+    "totalMultiplierInr": 0.035735,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 5,
+    "sectorCode": "in_sugar_cane_sugar_beet",
+    "sectorName": "Sugar cane, sugar beet",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0057082,
+    "totalMultiplierInr": 0.0134142,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 6,
+    "sectorCode": "in_plant_based_fibers",
+    "sectorName": "Plant-based fibers",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0060447,
+    "totalMultiplierInr": 0.0142051,
+    "hsnPrefixes": [
+      "52",
+      "54",
+      "55",
+      "60"
+    ]
+  },
+  {
+    "sectorIndex": 7,
+    "sectorCode": "in_crops_nec",
+    "sectorName": "Crops nec",
+    "category": "AGRICULTURE",
+    "directIntensityInr": 0.0038982,
+    "totalMultiplierInr": 0.0054574,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 8,
+    "sectorCode": "in_cattle",
+    "sectorName": "Cattle",
+    "category": "AGRICULTURE",
+    "directIntensityInr": 0.9559855,
+    "totalMultiplierInr": 1.3383798,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 9,
+    "sectorCode": "in_pigs",
+    "sectorName": "Pigs",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0201021,
+    "totalMultiplierInr": 0.0472398,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 10,
+    "sectorCode": "in_poultry",
+    "sectorName": "Poultry",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0138795,
+    "totalMultiplierInr": 0.0326168,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 11,
+    "sectorCode": "in_meat_animals_nec",
+    "sectorName": "Meat animals nec",
+    "category": "AGRICULTURE",
+    "directIntensityInr": 0.024037,
+    "totalMultiplierInr": 0.0336518,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 12,
+    "sectorCode": "in_animal_products_nec",
+    "sectorName": "Animal products nec",
+    "category": "AGRICULTURE",
+    "directIntensityInr": 5e-7,
+    "totalMultiplierInr": 7e-7,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 13,
+    "sectorCode": "in_raw_milk",
+    "sectorName": "Raw milk",
+    "category": "AGRICULTURE",
+    "directIntensityInr": 0.0180495,
+    "totalMultiplierInr": 0.0252693,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 14,
+    "sectorCode": "in_wool_silk_worm_cocoons",
+    "sectorName": "Wool, silk-worm cocoons",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0000068,
+    "totalMultiplierInr": 0.0000161,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 15,
+    "sectorCode": "in_manure_conventional_treatment",
+    "sectorName": "Manure (conventional treatment)",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 16,
+    "sectorCode": "in_manure_biogas_treatment",
+    "sectorName": "Manure (biogas treatment)",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 17,
+    "sectorCode": "in_products_of_forestry_logging_and_related",
+    "sectorName": "Products of forestry, logging and related services (02)",
+    "category": "AGRICULTURE",
+    "directIntensityInr": 0.0015389,
+    "totalMultiplierInr": 0.0021544,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 18,
+    "sectorCode": "in_fish_and_other_fishing_products_services",
+    "sectorName": "Fish and other fishing products; services incidental of fishing (05)",
+    "category": "AGRICULTURE",
+    "directIntensityInr": 0.0007211,
+    "totalMultiplierInr": 0.0010095,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 19,
+    "sectorCode": "in_anthracite",
+    "sectorName": "Anthracite",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 20,
+    "sectorCode": "in_coking_coal",
+    "sectorName": "Coking Coal",
+    "category": "MINING",
+    "directIntensityInr": 0.019302,
+    "totalMultiplierInr": 0.0221973,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 21,
+    "sectorCode": "in_other_bituminous_coal",
+    "sectorName": "Other Bituminous Coal",
+    "category": "MINING",
+    "directIntensityInr": 0.019302,
+    "totalMultiplierInr": 0.027988,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 22,
+    "sectorCode": "in_sub_bituminous_coal",
+    "sectorName": "Sub-Bituminous Coal",
+    "category": "MINING",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 23,
+    "sectorCode": "in_patent_fuel",
+    "sectorName": "Patent Fuel",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 24,
+    "sectorCode": "in_lignite_brown_coal",
+    "sectorName": "Lignite/Brown Coal",
+    "category": "MINING",
+    "directIntensityInr": 0.019302,
+    "totalMultiplierInr": 0.027988,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 25,
+    "sectorCode": "in_bkb_peat_briquettes",
+    "sectorName": "BKB/Peat Briquettes",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.019302,
+    "totalMultiplierInr": 0.0453598,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 26,
+    "sectorCode": "in_peat",
+    "sectorName": "Peat",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 27,
+    "sectorCode": "in_crude_petroleum_and_services_related_to_",
+    "sectorName": "Crude petroleum and services related to crude oil extraction, excluding surveying",
+    "category": "MINING",
+    "directIntensityInr": 0.0064107,
+    "totalMultiplierInr": 0.0092955,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 28,
+    "sectorCode": "in_natural_gas_and_services_related_to_natu",
+    "sectorName": "Natural gas and services related to natural gas extraction, excluding surveying",
+    "category": "MINING",
+    "directIntensityInr": 0.011241,
+    "totalMultiplierInr": 0.0162995,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 29,
+    "sectorCode": "in_natural_gas_liquids",
+    "sectorName": "Natural Gas Liquids",
+    "category": "MINING",
+    "directIntensityInr": 0.011241,
+    "totalMultiplierInr": 0.0162995,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 30,
+    "sectorCode": "in_other_hydrocarbons",
+    "sectorName": "Other Hydrocarbons",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 31,
+    "sectorCode": "in_uranium_and_thorium_ores_12",
+    "sectorName": "Uranium and thorium ores (12)",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0003738,
+    "totalMultiplierInr": 0.0008785,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 32,
+    "sectorCode": "in_iron_ores",
+    "sectorName": "Iron ores",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0004526,
+    "totalMultiplierInr": 0.0010637,
+    "hsnPrefixes": [
+      "72",
+      "73",
+      "74",
+      "76"
+    ]
+  },
+  {
+    "sectorIndex": 33,
+    "sectorCode": "in_copper_ores_and_concentrates",
+    "sectorName": "Copper ores and concentrates",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0010498,
+    "totalMultiplierInr": 0.0024671,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 34,
+    "sectorCode": "in_nickel_ores_and_concentrates",
+    "sectorName": "Nickel ores and concentrates",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 35,
+    "sectorCode": "in_aluminium_ores_and_concentrates",
+    "sectorName": "Aluminium ores and concentrates",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0009896,
+    "totalMultiplierInr": 0.0023256,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 36,
+    "sectorCode": "in_precious_metal_ores_and_concentrates",
+    "sectorName": "Precious metal ores and concentrates",
+    "category": "MINING",
+    "directIntensityInr": 0.0008018,
+    "totalMultiplierInr": 0.0011627,
+    "hsnPrefixes": [
+      "72",
+      "73",
+      "74",
+      "76"
+    ]
+  },
+  {
+    "sectorIndex": 37,
+    "sectorCode": "in_lead_zinc_and_tin_ores_and_concentrates",
+    "sectorName": "Lead, zinc and tin ores and concentrates",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0014312,
+    "totalMultiplierInr": 0.0033634,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 38,
+    "sectorCode": "in_other_non_ferrous_metal_ores_and_concent",
+    "sectorName": "Other non-ferrous metal ores and concentrates",
+    "category": "MINING",
+    "directIntensityInr": 0.0005805,
+    "totalMultiplierInr": 0.0008418,
+    "hsnPrefixes": [
+      "72",
+      "73",
+      "74",
+      "76"
+    ]
+  },
+  {
+    "sectorIndex": 39,
+    "sectorCode": "in_stone",
+    "sectorName": "Stone",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0074668,
+    "totalMultiplierInr": 0.0175469,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 40,
+    "sectorCode": "in_sand_and_clay",
+    "sectorName": "Sand and clay",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0285527,
+    "totalMultiplierInr": 0.0670988,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 41,
+    "sectorCode": "in_chemical_and_fertilizer_minerals_salt_an",
+    "sectorName": "Chemical and fertilizer minerals, salt and other mining and quarrying products n.e.c.",
+    "category": "MINING",
+    "directIntensityInr": 0.0005614,
+    "totalMultiplierInr": 0.000814,
+    "hsnPrefixes": [
+      "31",
+      "3102",
+      "3105"
+    ]
+  },
+  {
+    "sectorIndex": 42,
+    "sectorCode": "in_products_of_meat_cattle",
+    "sectorName": "Products of meat cattle",
+    "category": "AGRICULTURE",
+    "directIntensityInr": 0.015308,
+    "totalMultiplierInr": 0.0214312,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 43,
+    "sectorCode": "in_products_of_meat_pigs",
+    "sectorName": "Products of meat pigs",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0019757,
+    "totalMultiplierInr": 0.0046429,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 44,
+    "sectorCode": "in_products_of_meat_poultry",
+    "sectorName": "Products of meat poultry",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0001961,
+    "totalMultiplierInr": 0.0004609,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 45,
+    "sectorCode": "in_meat_products_nec",
+    "sectorName": "Meat products nec",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.001909,
+    "totalMultiplierInr": 0.0044862,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 46,
+    "sectorCode": "in_products_of_vegetable_oils_and_fats",
+    "sectorName": "products of Vegetable oils and fats",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0008028,
+    "totalMultiplierInr": 0.0018866,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 47,
+    "sectorCode": "in_dairy_products",
+    "sectorName": "Dairy products",
+    "category": "TRANSPORTATION",
+    "directIntensityInr": 0.0002075,
+    "totalMultiplierInr": 0.0003424,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 48,
+    "sectorCode": "in_processed_rice",
+    "sectorName": "Processed rice",
+    "category": "AGRICULTURE",
+    "directIntensityInr": 0.0038451,
+    "totalMultiplierInr": 0.0053832,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 49,
+    "sectorCode": "in_sugar",
+    "sectorName": "Sugar",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0002447,
+    "totalMultiplierInr": 0.000575,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 50,
+    "sectorCode": "in_food_products_nec",
+    "sectorName": "Food products nec",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0015148,
+    "totalMultiplierInr": 0.0035598,
+    "hsnPrefixes": [
+      "19",
+      "20",
+      "21"
+    ]
+  },
+  {
+    "sectorIndex": 51,
+    "sectorCode": "in_beverages",
+    "sectorName": "Beverages",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0016485,
+    "totalMultiplierInr": 0.0038739,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 52,
+    "sectorCode": "in_fish_products",
+    "sectorName": "Fish products",
+    "category": "AGRICULTURE",
+    "directIntensityInr": 0.0001005,
+    "totalMultiplierInr": 0.0001407,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 53,
+    "sectorCode": "in_tobacco_products_16",
+    "sectorName": "Tobacco products (16)",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0004406,
+    "totalMultiplierInr": 0.0010353,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 54,
+    "sectorCode": "in_textiles_17",
+    "sectorName": "Textiles (17)",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.000979,
+    "totalMultiplierInr": 0.0023007,
+    "hsnPrefixes": [
+      "52",
+      "54",
+      "55",
+      "60"
+    ]
+  },
+  {
+    "sectorIndex": 55,
+    "sectorCode": "in_wearing_apparel_furs_18",
+    "sectorName": "Wearing apparel; furs (18)",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0006701,
+    "totalMultiplierInr": 0.0015748,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 56,
+    "sectorCode": "in_leather_and_leather_products_19",
+    "sectorName": "Leather and leather products (19)",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0008014,
+    "totalMultiplierInr": 0.0018833,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 57,
+    "sectorCode": "in_wood_and_products_of_wood_and_cork_excep",
+    "sectorName": "Wood and products of wood and cork (except furniture); articles of straw and plaiting materials (20)",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0014796,
+    "totalMultiplierInr": 0.003477,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 58,
+    "sectorCode": "in_wood_material_for_treatment_re_processin",
+    "sectorName": "Wood material for treatment, Re-processing of secondary wood material into new wood material",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 59,
+    "sectorCode": "in_pulp",
+    "sectorName": "Pulp",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0194861,
+    "totalMultiplierInr": 0.0457922,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 60,
+    "sectorCode": "in_secondary_paper_for_treatment_re_process",
+    "sectorName": "Secondary paper for treatment, Re-processing of secondary paper into new pulp",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": [
+      "48",
+      "4819",
+      "4802"
+    ]
+  },
+  {
+    "sectorIndex": 61,
+    "sectorCode": "in_paper_and_paper_products",
+    "sectorName": "Paper and paper products",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0011025,
+    "totalMultiplierInr": 0.002591,
+    "hsnPrefixes": [
+      "48",
+      "4819",
+      "4802"
+    ]
+  },
+  {
+    "sectorIndex": 62,
+    "sectorCode": "in_printed_matter_and_recorded_media_22",
+    "sectorName": "Printed matter and recorded media (22)",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0025842,
+    "totalMultiplierInr": 0.006073,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 63,
+    "sectorCode": "in_coke_oven_coke",
+    "sectorName": "Coke Oven Coke",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0033471,
+    "totalMultiplierInr": 0.0078657,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 64,
+    "sectorCode": "in_gas_coke",
+    "sectorName": "Gas Coke",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 65,
+    "sectorCode": "in_coal_tar",
+    "sectorName": "Coal Tar",
+    "category": "MINING",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 66,
+    "sectorCode": "in_motor_gasoline",
+    "sectorName": "Motor Gasoline",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0047254,
+    "totalMultiplierInr": 0.0111046,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 67,
+    "sectorCode": "in_aviation_gasoline",
+    "sectorName": "Aviation Gasoline",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0047319,
+    "totalMultiplierInr": 0.0111199,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 68,
+    "sectorCode": "in_gasoline_type_jet_fuel",
+    "sectorName": "Gasoline Type Jet Fuel",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 69,
+    "sectorCode": "in_kerosene_type_jet_fuel",
+    "sectorName": "Kerosene Type Jet Fuel",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0047335,
+    "totalMultiplierInr": 0.0111236,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 70,
+    "sectorCode": "in_kerosene",
+    "sectorName": "Kerosene",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0048513,
+    "totalMultiplierInr": 0.0114006,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 71,
+    "sectorCode": "in_gas_diesel_oil",
+    "sectorName": "Gas/Diesel Oil",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0047431,
+    "totalMultiplierInr": 0.0111464,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 72,
+    "sectorCode": "in_heavy_fuel_oil",
+    "sectorName": "Heavy Fuel Oil",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0047307,
+    "totalMultiplierInr": 0.011117,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 73,
+    "sectorCode": "in_refinery_gas",
+    "sectorName": "Refinery Gas",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0047318,
+    "totalMultiplierInr": 0.0111197,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 74,
+    "sectorCode": "in_liquefied_petroleum_gases_lpg",
+    "sectorName": "Liquefied Petroleum Gases (LPG)",
+    "category": "MINING",
+    "directIntensityInr": 0.0047464,
+    "totalMultiplierInr": 0.0068822,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 75,
+    "sectorCode": "in_refinery_feedstocks",
+    "sectorName": "Refinery Feedstocks",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0047319,
+    "totalMultiplierInr": 0.01112,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 76,
+    "sectorCode": "in_ethane",
+    "sectorName": "Ethane",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 77,
+    "sectorCode": "in_naphtha",
+    "sectorName": "Naphtha",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.00474,
+    "totalMultiplierInr": 0.0111391,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 78,
+    "sectorCode": "in_white_spirit_sbp",
+    "sectorName": "White Spirit & SBP",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 79,
+    "sectorCode": "in_lubricants",
+    "sectorName": "Lubricants",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0047313,
+    "totalMultiplierInr": 0.0111186,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 80,
+    "sectorCode": "in_bitumen",
+    "sectorName": "Bitumen",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0047309,
+    "totalMultiplierInr": 0.0111177,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 81,
+    "sectorCode": "in_paraffin_waxes",
+    "sectorName": "Paraffin Waxes",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0045186,
+    "totalMultiplierInr": 0.0106188,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 82,
+    "sectorCode": "in_petroleum_coke",
+    "sectorName": "Petroleum Coke",
+    "category": "MINING",
+    "directIntensityInr": 0.0047177,
+    "totalMultiplierInr": 0.0068407,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 83,
+    "sectorCode": "in_non_specified_petroleum_products",
+    "sectorName": "Non-specified Petroleum Products",
+    "category": "MINING",
+    "directIntensityInr": 0.0047318,
+    "totalMultiplierInr": 0.0068611,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 84,
+    "sectorCode": "in_nuclear_fuel",
+    "sectorName": "Nuclear fuel",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0003308,
+    "totalMultiplierInr": 0.0007774,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 85,
+    "sectorCode": "in_plastics_basic",
+    "sectorName": "Plastics, basic",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0026274,
+    "totalMultiplierInr": 0.0061744,
+    "hsnPrefixes": [
+      "39",
+      "40"
+    ]
+  },
+  {
+    "sectorIndex": 86,
+    "sectorCode": "in_secondary_plastic_for_treatment_re_proce",
+    "sectorName": "Secondary plastic for treatment, Re-processing of secondary plastic into new plastic",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": [
+      "39",
+      "40"
+    ]
+  },
+  {
+    "sectorIndex": 87,
+    "sectorCode": "in_n_fertiliser",
+    "sectorName": "N-fertiliser",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0027031,
+    "totalMultiplierInr": 0.0063522,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 88,
+    "sectorCode": "in_p_and_other_fertiliser",
+    "sectorName": "P- and other fertiliser",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0024043,
+    "totalMultiplierInr": 0.0056501,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 89,
+    "sectorCode": "in_chemicals_nec",
+    "sectorName": "Chemicals nec",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0030735,
+    "totalMultiplierInr": 0.0072228,
+    "hsnPrefixes": [
+      "28",
+      "29",
+      "38"
+    ]
+  },
+  {
+    "sectorIndex": 90,
+    "sectorCode": "in_charcoal",
+    "sectorName": "Charcoal",
+    "category": "MINING",
+    "directIntensityInr": 0.0006921,
+    "totalMultiplierInr": 0.0010035,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 91,
+    "sectorCode": "in_additives_blending_components",
+    "sectorName": "Additives/Blending Components",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 92,
+    "sectorCode": "in_biogasoline",
+    "sectorName": "Biogasoline",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0012736,
+    "totalMultiplierInr": 0.0029929,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 93,
+    "sectorCode": "in_biodiesels",
+    "sectorName": "Biodiesels",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0006921,
+    "totalMultiplierInr": 0.0016264,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 94,
+    "sectorCode": "in_other_liquid_biofuels",
+    "sectorName": "Other Liquid Biofuels",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 95,
+    "sectorCode": "in_rubber_and_plastic_products_25",
+    "sectorName": "Rubber and plastic products (25)",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0042539,
+    "totalMultiplierInr": 0.0099966,
+    "hsnPrefixes": [
+      "39",
+      "40"
+    ]
+  },
+  {
+    "sectorIndex": 96,
+    "sectorCode": "in_glass_and_glass_products",
+    "sectorName": "Glass and glass products",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0084503,
+    "totalMultiplierInr": 0.0198582,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 97,
+    "sectorCode": "in_secondary_glass_for_treatment_re_process",
+    "sectorName": "Secondary glass for treatment, Re-processing of secondary glass into new glass",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 98,
+    "sectorCode": "in_ceramic_goods",
+    "sectorName": "Ceramic goods",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0064042,
+    "totalMultiplierInr": 0.0150498,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 99,
+    "sectorCode": "in_bricks_tiles_and_construction_products_i",
+    "sectorName": "Bricks, tiles and construction products, in baked clay",
+    "category": "CONSTRUCTION",
+    "directIntensityInr": 0.0105582,
+    "totalMultiplierInr": 0.0295629,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 100,
+    "sectorCode": "in_cement_lime_and_plaster",
+    "sectorName": "Cement, lime and plaster",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0978669,
+    "totalMultiplierInr": 0.2299871,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 101,
+    "sectorCode": "in_ash_for_treatment_re_processing_of_ash_i",
+    "sectorName": "Ash for treatment, Re-processing of ash into clinker",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 102,
+    "sectorCode": "in_other_non_metallic_mineral_products",
+    "sectorName": "Other non-metallic mineral products",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0051287,
+    "totalMultiplierInr": 0.0120525,
+    "hsnPrefixes": [
+      "72",
+      "73",
+      "74",
+      "76"
+    ]
+  },
+  {
+    "sectorIndex": 103,
+    "sectorCode": "in_basic_iron_and_steel_and_of_ferro_alloys",
+    "sectorName": "Basic iron and steel and of ferro-alloys and first products thereof",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.004304,
+    "totalMultiplierInr": 0.0101145,
+    "hsnPrefixes": [
+      "72",
+      "73",
+      "74",
+      "76"
+    ]
+  },
+  {
+    "sectorIndex": 104,
+    "sectorCode": "in_secondary_steel_for_treatment_re_process",
+    "sectorName": "Secondary steel for treatment, Re-processing of secondary steel into new steel",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": [
+      "72",
+      "73",
+      "74",
+      "76"
+    ]
+  },
+  {
+    "sectorIndex": 105,
+    "sectorCode": "in_precious_metals",
+    "sectorName": "Precious metals",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0080779,
+    "totalMultiplierInr": 0.0189832,
+    "hsnPrefixes": [
+      "72",
+      "73",
+      "74",
+      "76"
+    ]
+  },
+  {
+    "sectorIndex": 106,
+    "sectorCode": "in_secondary_preciuos_metals_for_treatment_",
+    "sectorName": "Secondary preciuos metals for treatment, Re-processing of secondary preciuos metals into new preciuos metals",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": [
+      "72",
+      "73",
+      "74",
+      "76"
+    ]
+  },
+  {
+    "sectorIndex": 107,
+    "sectorCode": "in_aluminium_and_aluminium_products",
+    "sectorName": "Aluminium and aluminium products",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0066683,
+    "totalMultiplierInr": 0.0156705,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 108,
+    "sectorCode": "in_secondary_aluminium_for_treatment_re_pro",
+    "sectorName": "Secondary aluminium for treatment, Re-processing of secondary aluminium into new aluminium",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 109,
+    "sectorCode": "in_lead_zinc_and_tin_and_products_thereof",
+    "sectorName": "Lead, zinc and tin and products thereof",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0119756,
+    "totalMultiplierInr": 0.0281427,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 110,
+    "sectorCode": "in_secondary_lead_for_treatment_re_processi",
+    "sectorName": "Secondary lead for treatment, Re-processing of secondary lead into new lead",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 111,
+    "sectorCode": "in_copper_products",
+    "sectorName": "Copper products",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0086968,
+    "totalMultiplierInr": 0.0204375,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 112,
+    "sectorCode": "in_secondary_copper_for_treatment_re_proces",
+    "sectorName": "Secondary copper for treatment, Re-processing of secondary copper into new copper",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 113,
+    "sectorCode": "in_other_non_ferrous_metal_products",
+    "sectorName": "Other non-ferrous metal products",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0071779,
+    "totalMultiplierInr": 0.0168681,
+    "hsnPrefixes": [
+      "72",
+      "73",
+      "74",
+      "76"
+    ]
+  },
+  {
+    "sectorIndex": 114,
+    "sectorCode": "in_secondary_other_non_ferrous_metals_for_t",
+    "sectorName": "Secondary other non-ferrous metals for treatment, Re-processing of secondary other non-ferrous metals into new other non-ferrous metals",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": [
+      "72",
+      "73",
+      "74",
+      "76"
+    ]
+  },
+  {
+    "sectorIndex": 115,
+    "sectorCode": "in_foundry_work_services",
+    "sectorName": "Foundry work services",
+    "category": "SERVICES",
+    "directIntensityInr": 0.1277086,
+    "totalMultiplierInr": 0.2490318,
+    "hsnPrefixes": [
+      "72",
+      "73",
+      "74",
+      "76"
+    ]
+  },
+  {
+    "sectorIndex": 116,
+    "sectorCode": "in_fabricated_metal_products_except_machine",
+    "sectorName": "Fabricated metal products, except machinery and equipment (28)",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0007695,
+    "totalMultiplierInr": 0.0018082,
+    "hsnPrefixes": [
+      "72",
+      "73",
+      "74",
+      "76"
+    ]
+  },
+  {
+    "sectorIndex": 117,
+    "sectorCode": "in_machinery_and_equipment_n_e_c_29",
+    "sectorName": "Machinery and equipment n.e.c. (29)",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0006114,
+    "totalMultiplierInr": 0.0014367,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 118,
+    "sectorCode": "in_office_machinery_and_computers_30",
+    "sectorName": "Office machinery and computers (30)",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0005007,
+    "totalMultiplierInr": 0.0011767,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 119,
+    "sectorCode": "in_electrical_machinery_and_apparatus_n_e_c",
+    "sectorName": "Electrical machinery and apparatus n.e.c. (31)",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0001971,
+    "totalMultiplierInr": 0.0004632,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 120,
+    "sectorCode": "in_radio_television_and_communication_equip",
+    "sectorName": "Radio, television and communication equipment and apparatus (32)",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0000667,
+    "totalMultiplierInr": 0.0001567,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 121,
+    "sectorCode": "in_medical_precision_and_optical_instrument",
+    "sectorName": "Medical, precision and optical instruments, watches and clocks (33)",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.002681,
+    "totalMultiplierInr": 0.0063003,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 122,
+    "sectorCode": "in_motor_vehicles_trailers_and_semi_trailer",
+    "sectorName": "Motor vehicles, trailers and semi-trailers (34)",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.0001461,
+    "totalMultiplierInr": 0.0003433,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 123,
+    "sectorCode": "in_other_transport_equipment_35",
+    "sectorName": "Other transport equipment (35)",
+    "category": "TRANSPORTATION",
+    "directIntensityInr": 0.0002921,
+    "totalMultiplierInr": 0.0004819,
+    "hsnPrefixes": [
+      "9965",
+      "9967",
+      "9966"
+    ]
+  },
+  {
+    "sectorIndex": 124,
+    "sectorCode": "in_furniture_other_manufactured_goods_n_e_c",
+    "sectorName": "Furniture; other manufactured goods n.e.c. (36)",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.005175,
+    "totalMultiplierInr": 0.0121612,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 125,
+    "sectorCode": "in_secondary_raw_materials",
+    "sectorName": "Secondary raw materials",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.9223948,
+    "totalMultiplierInr": 2.1676278,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 126,
+    "sectorCode": "in_bottles_for_treatment_recycling_of_bottl",
+    "sectorName": "Bottles for treatment, Recycling of bottles by direct reuse",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 127,
+    "sectorCode": "in_electricity_by_coal",
+    "sectorName": "Electricity by coal",
+    "category": "MINING",
+    "directIntensityInr": 0.2239505,
+    "totalMultiplierInr": 0.2575431,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 128,
+    "sectorCode": "in_electricity_by_gas",
+    "sectorName": "Electricity by gas",
+    "category": "ENERGY",
+    "directIntensityInr": 0.1119422,
+    "totalMultiplierInr": 0.1399278,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 129,
+    "sectorCode": "in_electricity_by_nuclear",
+    "sectorName": "Electricity by nuclear",
+    "category": "ENERGY",
+    "directIntensityInr": 0.0000623,
+    "totalMultiplierInr": 0.0000779,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 130,
+    "sectorCode": "in_electricity_by_hydro",
+    "sectorName": "Electricity by hydro",
+    "category": "ENERGY",
+    "directIntensityInr": 0.0003072,
+    "totalMultiplierInr": 0.0003841,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 131,
+    "sectorCode": "in_electricity_by_wind",
+    "sectorName": "Electricity by wind",
+    "category": "ENERGY",
+    "directIntensityInr": 0.000035,
+    "totalMultiplierInr": 0.0000437,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 132,
+    "sectorCode": "in_electricity_by_petroleum_and_other_oil_d",
+    "sectorName": "Electricity by petroleum and other oil derivatives",
+    "category": "MINING",
+    "directIntensityInr": 0.1117472,
+    "totalMultiplierInr": 0.1620334,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 133,
+    "sectorCode": "in_electricity_by_biomass_and_waste",
+    "sectorName": "Electricity by biomass and waste",
+    "category": "ENERGY",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 134,
+    "sectorCode": "in_electricity_by_solar_photovoltaic",
+    "sectorName": "Electricity by solar photovoltaic",
+    "category": "ENERGY",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 135,
+    "sectorCode": "in_electricity_by_solar_thermal",
+    "sectorName": "Electricity by solar thermal",
+    "category": "ENERGY",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 136,
+    "sectorCode": "in_electricity_by_tide_wave_ocean",
+    "sectorName": "Electricity by tide, wave, ocean",
+    "category": "ENERGY",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 137,
+    "sectorCode": "in_electricity_by_geothermal",
+    "sectorName": "Electricity by Geothermal",
+    "category": "ENERGY",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 138,
+    "sectorCode": "in_electricity_nec",
+    "sectorName": "Electricity nec",
+    "category": "ENERGY",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 139,
+    "sectorCode": "in_transmission_services_of_electricity",
+    "sectorName": "Transmission services of electricity",
+    "category": "ENERGY",
+    "directIntensityInr": 0.000658,
+    "totalMultiplierInr": 0.0008225,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 140,
+    "sectorCode": "in_distribution_and_trade_services_of_elect",
+    "sectorName": "Distribution and trade services of electricity",
+    "category": "ENERGY",
+    "directIntensityInr": 0.0001735,
+    "totalMultiplierInr": 0.0002168,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 141,
+    "sectorCode": "in_coke_oven_gas",
+    "sectorName": "Coke oven gas",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.000156,
+    "totalMultiplierInr": 0.0003666,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 142,
+    "sectorCode": "in_blast_furnace_gas",
+    "sectorName": "Blast Furnace Gas",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.000156,
+    "totalMultiplierInr": 0.0003666,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 143,
+    "sectorCode": "in_oxygen_steel_furnace_gas",
+    "sectorName": "Oxygen Steel Furnace Gas",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": [
+      "72",
+      "73",
+      "74",
+      "76"
+    ]
+  },
+  {
+    "sectorIndex": 144,
+    "sectorCode": "in_gas_works_gas",
+    "sectorName": "Gas Works Gas",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0.000156,
+    "totalMultiplierInr": 0.0003666,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 145,
+    "sectorCode": "in_biogas",
+    "sectorName": "Biogas",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 146,
+    "sectorCode": "in_distribution_services_of_gaseous_fuels_t",
+    "sectorName": "Distribution services of gaseous fuels through mains",
+    "category": "ENERGY",
+    "directIntensityInr": 0.000156,
+    "totalMultiplierInr": 0.000195,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 147,
+    "sectorCode": "in_steam_and_hot_water_supply_services",
+    "sectorName": "Steam and hot water supply services",
+    "category": "SERVICES",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 148,
+    "sectorCode": "in_collected_and_purified_water_distributio",
+    "sectorName": "Collected and purified water, distribution services of water (41)",
+    "category": "ENERGY",
+    "directIntensityInr": 0.0028924,
+    "totalMultiplierInr": 0.0036155,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 149,
+    "sectorCode": "in_construction_work_45",
+    "sectorName": "Construction work (45)",
+    "category": "CONSTRUCTION",
+    "directIntensityInr": 0.0001632,
+    "totalMultiplierInr": 0.0004571,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 150,
+    "sectorCode": "in_secondary_construction_material_for_trea",
+    "sectorName": "Secondary construction material for treatment, Re-processing of secondary construction material into aggregates",
+    "category": "CONSTRUCTION",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 151,
+    "sectorCode": "in_sale_maintenance_repair_of_motor_vehicle",
+    "sectorName": "Sale, maintenance, repair of motor vehicles, motor vehicles parts, motorcycles, motor cycles parts and accessoiries",
+    "category": "TRANSPORTATION",
+    "directIntensityInr": 0.0003288,
+    "totalMultiplierInr": 0.0005425,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 152,
+    "sectorCode": "in_retail_trade_services_of_motor_fuel",
+    "sectorName": "Retail trade services of motor fuel",
+    "category": "SERVICES",
+    "directIntensityInr": 0.0003525,
+    "totalMultiplierInr": 0.0006874,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 153,
+    "sectorCode": "in_wholesale_trade_and_commission_trade_ser",
+    "sectorName": "Wholesale trade and commission trade services, except of motor vehicles and motorcycles (51)",
+    "category": "SERVICES",
+    "directIntensityInr": 0.0004414,
+    "totalMultiplierInr": 0.0008607,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 154,
+    "sectorCode": "in_retail_trade_services_except_of_motor_ve",
+    "sectorName": "Retail  trade services, except of motor vehicles and motorcycles; repair services of personal and household goods (52)",
+    "category": "TRANSPORTATION",
+    "directIntensityInr": 0.0004547,
+    "totalMultiplierInr": 0.0007502,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 155,
+    "sectorCode": "in_hotel_and_restaurant_services_55",
+    "sectorName": "Hotel and restaurant services (55)",
+    "category": "SERVICES",
+    "directIntensityInr": 0.0011903,
+    "totalMultiplierInr": 0.002321,
+    "hsnPrefixes": [
+      "9963"
+    ]
+  },
+  {
+    "sectorIndex": 156,
+    "sectorCode": "in_railway_transportation_services",
+    "sectorName": "Railway transportation services",
+    "category": "TRANSPORTATION",
+    "directIntensityInr": 0.002066,
+    "totalMultiplierInr": 0.0034088,
+    "hsnPrefixes": [
+      "9965",
+      "9967",
+      "9966"
+    ]
+  },
+  {
+    "sectorIndex": 157,
+    "sectorCode": "in_other_land_transportation_services",
+    "sectorName": "Other land transportation services",
+    "category": "TRANSPORTATION",
+    "directIntensityInr": 0.0013679,
+    "totalMultiplierInr": 0.002257,
+    "hsnPrefixes": [
+      "9965",
+      "9967",
+      "9966"
+    ]
+  },
+  {
+    "sectorIndex": 158,
+    "sectorCode": "in_transportation_services_via_pipelines",
+    "sectorName": "Transportation services via pipelines",
+    "category": "TRANSPORTATION",
+    "directIntensityInr": 0.0026177,
+    "totalMultiplierInr": 0.0043192,
+    "hsnPrefixes": [
+      "9965",
+      "9967",
+      "9966"
+    ]
+  },
+  {
+    "sectorIndex": 159,
+    "sectorCode": "in_sea_and_coastal_water_transportation_ser",
+    "sectorName": "Sea and coastal water transportation services",
+    "category": "TRANSPORTATION",
+    "directIntensityInr": 0.0435819,
+    "totalMultiplierInr": 0.0719101,
+    "hsnPrefixes": [
+      "9965",
+      "9967",
+      "9966"
+    ]
+  },
+  {
+    "sectorIndex": 160,
+    "sectorCode": "in_inland_water_transportation_services",
+    "sectorName": "Inland water transportation services",
+    "category": "TRANSPORTATION",
+    "directIntensityInr": 0.0243912,
+    "totalMultiplierInr": 0.0402455,
+    "hsnPrefixes": [
+      "9965",
+      "9967",
+      "9966"
+    ]
+  },
+  {
+    "sectorIndex": 161,
+    "sectorCode": "in_air_transport_services_62",
+    "sectorName": "Air transport services (62)",
+    "category": "TRANSPORTATION",
+    "directIntensityInr": 0.0192389,
+    "totalMultiplierInr": 0.0317442,
+    "hsnPrefixes": [
+      "9965",
+      "9967",
+      "9966"
+    ]
+  },
+  {
+    "sectorIndex": 162,
+    "sectorCode": "in_supporting_and_auxiliary_transport_servi",
+    "sectorName": "Supporting and auxiliary transport services; travel agency services (63)",
+    "category": "TRANSPORTATION",
+    "directIntensityInr": 0.0014104,
+    "totalMultiplierInr": 0.0023272,
+    "hsnPrefixes": [
+      "9965",
+      "9967",
+      "9966"
+    ]
+  },
+  {
+    "sectorIndex": 163,
+    "sectorCode": "in_post_and_telecommunication_services_64",
+    "sectorName": "Post and telecommunication services (64)",
+    "category": "SERVICES",
+    "directIntensityInr": 0.0008683,
+    "totalMultiplierInr": 0.0016932,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 164,
+    "sectorCode": "in_financial_intermediation_services_except",
+    "sectorName": "Financial intermediation services, except insurance and pension funding services (65)",
+    "category": "SERVICES",
+    "directIntensityInr": 0.0004569,
+    "totalMultiplierInr": 0.000891,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 165,
+    "sectorCode": "in_insurance_and_pension_funding_services_e",
+    "sectorName": "Insurance and pension funding services, except compulsory social security services (66)",
+    "category": "SERVICES",
+    "directIntensityInr": 0.0005438,
+    "totalMultiplierInr": 0.0010603,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 166,
+    "sectorCode": "in_services_auxiliary_to_financial_intermed",
+    "sectorName": "Services auxiliary to financial intermediation (67)",
+    "category": "SERVICES",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 167,
+    "sectorCode": "in_real_estate_services_70",
+    "sectorName": "Real estate services (70)",
+    "category": "SERVICES",
+    "directIntensityInr": 0.0000885,
+    "totalMultiplierInr": 0.0001726,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 168,
+    "sectorCode": "in_renting_services_of_machinery_and_equipm",
+    "sectorName": "Renting services of machinery and equipment without operator and of personal and household goods (71)",
+    "category": "SERVICES",
+    "directIntensityInr": 0.0027252,
+    "totalMultiplierInr": 0.005314,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 169,
+    "sectorCode": "in_computer_and_related_services_72",
+    "sectorName": "Computer and related services (72)",
+    "category": "SERVICES",
+    "directIntensityInr": 0.0003075,
+    "totalMultiplierInr": 0.0005997,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 170,
+    "sectorCode": "in_research_and_development_services_73",
+    "sectorName": "Research and development services (73)",
+    "category": "SERVICES",
+    "directIntensityInr": 0.0007278,
+    "totalMultiplierInr": 0.0014193,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 171,
+    "sectorCode": "in_other_business_services_74",
+    "sectorName": "Other business services (74)",
+    "category": "SERVICES",
+    "directIntensityInr": 0.0011056,
+    "totalMultiplierInr": 0.0021559,
+    "hsnPrefixes": [
+      "9983",
+      "9984",
+      "9985"
+    ]
+  },
+  {
+    "sectorIndex": 172,
+    "sectorCode": "in_public_administration_and_defence_servic",
+    "sectorName": "Public administration and defence services; compulsory social security services (75)",
+    "category": "SERVICES",
+    "directIntensityInr": 0.0008572,
+    "totalMultiplierInr": 0.0016715,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 173,
+    "sectorCode": "in_education_services_80",
+    "sectorName": "Education services (80)",
+    "category": "SERVICES",
+    "directIntensityInr": 0.0004484,
+    "totalMultiplierInr": 0.0008743,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 174,
+    "sectorCode": "in_health_and_social_work_services_85",
+    "sectorName": "Health and social work services (85)",
+    "category": "SERVICES",
+    "directIntensityInr": 0.0003437,
+    "totalMultiplierInr": 0.0006703,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 175,
+    "sectorCode": "in_food_waste_for_treatment_incineration",
+    "sectorName": "Food waste for treatment: incineration",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 176,
+    "sectorCode": "in_paper_waste_for_treatment_incineration",
+    "sectorName": "Paper waste for treatment: incineration",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": [
+      "48",
+      "4819",
+      "4802"
+    ]
+  },
+  {
+    "sectorIndex": 177,
+    "sectorCode": "in_plastic_waste_for_treatment_incineration",
+    "sectorName": "Plastic waste for treatment: incineration",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": [
+      "39",
+      "40"
+    ]
+  },
+  {
+    "sectorIndex": 178,
+    "sectorCode": "in_intert_metal_waste_for_treatment_inciner",
+    "sectorName": "Intert/metal waste for treatment: incineration",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": [
+      "72",
+      "73",
+      "74",
+      "76"
+    ]
+  },
+  {
+    "sectorIndex": 179,
+    "sectorCode": "in_textiles_waste_for_treatment_incineratio",
+    "sectorName": "Textiles waste for treatment: incineration",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": [
+      "52",
+      "54",
+      "55",
+      "60"
+    ]
+  },
+  {
+    "sectorIndex": 180,
+    "sectorCode": "in_wood_waste_for_treatment_incineration",
+    "sectorName": "Wood waste for treatment: incineration",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 181,
+    "sectorCode": "in_oil_hazardous_waste_for_treatment_incine",
+    "sectorName": "Oil/hazardous waste for treatment: incineration",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 182,
+    "sectorCode": "in_food_waste_for_treatment_biogasification",
+    "sectorName": "Food waste for treatment: biogasification and land application",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 183,
+    "sectorCode": "in_paper_waste_for_treatment_biogasificatio",
+    "sectorName": "Paper waste for treatment: biogasification and land application",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": [
+      "48",
+      "4819",
+      "4802"
+    ]
+  },
+  {
+    "sectorIndex": 184,
+    "sectorCode": "in_sewage_sludge_for_treatment_biogasificat",
+    "sectorName": "Sewage sludge for treatment: biogasification and land application",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 185,
+    "sectorCode": "in_food_waste_for_treatment_composting_and_",
+    "sectorName": "Food waste for treatment: composting and land application",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 186,
+    "sectorCode": "in_paper_and_wood_waste_for_treatment_compo",
+    "sectorName": "Paper and wood waste for treatment: composting and land application",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": [
+      "48",
+      "4819",
+      "4802"
+    ]
+  },
+  {
+    "sectorIndex": 187,
+    "sectorCode": "in_food_waste_for_treatment_waste_water_tre",
+    "sectorName": "Food waste for treatment: waste water treatment",
+    "category": "WASTE",
+    "directIntensityInr": 13.592284,
+    "totalMultiplierInr": 25.1457254,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 188,
+    "sectorCode": "in_other_waste_for_treatment_waste_water_tr",
+    "sectorName": "Other waste for treatment: waste water treatment",
+    "category": "WASTE",
+    "directIntensityInr": 11.2027265,
+    "totalMultiplierInr": 20.725044,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 189,
+    "sectorCode": "in_food_waste_for_treatment_landfill",
+    "sectorName": "Food waste for treatment: landfill",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 190,
+    "sectorCode": "in_paper_for_treatment_landfill",
+    "sectorName": "Paper for treatment: landfill",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": [
+      "48",
+      "4819",
+      "4802"
+    ]
+  },
+  {
+    "sectorIndex": 191,
+    "sectorCode": "in_plastic_waste_for_treatment_landfill",
+    "sectorName": "Plastic waste for treatment: landfill",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": [
+      "39",
+      "40"
+    ]
+  },
+  {
+    "sectorIndex": 192,
+    "sectorCode": "in_inert_metal_hazardous_waste_for_treatmen",
+    "sectorName": "Inert/metal/hazardous waste for treatment: landfill",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": [
+      "72",
+      "73",
+      "74",
+      "76"
+    ]
+  },
+  {
+    "sectorIndex": 193,
+    "sectorCode": "in_textiles_waste_for_treatment_landfill",
+    "sectorName": "Textiles waste for treatment: landfill",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": [
+      "52",
+      "54",
+      "55",
+      "60"
+    ]
+  },
+  {
+    "sectorIndex": 194,
+    "sectorCode": "in_wood_waste_for_treatment_landfill",
+    "sectorName": "Wood waste for treatment: landfill",
+    "category": "WASTE",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 195,
+    "sectorCode": "in_membership_organisation_services_n_e_c_9",
+    "sectorName": "Membership organisation services n.e.c. (91)",
+    "category": "SERVICES",
+    "directIntensityInr": 0.0010127,
+    "totalMultiplierInr": 0.0019747,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 196,
+    "sectorCode": "in_recreational_cultural_and_sporting_servi",
+    "sectorName": "Recreational, cultural and sporting services (92)",
+    "category": "SERVICES",
+    "directIntensityInr": 0.0010912,
+    "totalMultiplierInr": 0.0021278,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 197,
+    "sectorCode": "in_other_services_93",
+    "sectorName": "Other services (93)",
+    "category": "SERVICES",
+    "directIntensityInr": 0.0009085,
+    "totalMultiplierInr": 0.0017715,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 198,
+    "sectorCode": "in_private_households_with_employed_persons",
+    "sectorName": "Private households with employed persons (95)",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  },
+  {
+    "sectorIndex": 199,
+    "sectorCode": "in_extra_territorial_organizations_and_bodi",
+    "sectorName": "Extra-territorial organizations and bodies",
+    "category": "MANUFACTURING",
+    "directIntensityInr": 0,
+    "totalMultiplierInr": 0,
+    "hsnPrefixes": []
+  }
+]

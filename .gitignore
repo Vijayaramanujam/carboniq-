@@ -1,0 +1,39 @@
+# Dependency directories
+node_modules/
+*/node_modules/
+
+# Environment files
+.env
+.env.*
+!.env.example
+*/.env
+*/.env.*
+!*/.env.example
+
+# Build outputs
+dist/
+dist-ssr/
+*/dist/
+
+# Local database storage & uploads
+data/
+*/data/
+!server/src/data/
+server/uploads/documents/*
+!server/uploads/documents/.gitkeep
+server/uploads/temp/*
+!server/uploads/temp/.gitkeep
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System & Editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json

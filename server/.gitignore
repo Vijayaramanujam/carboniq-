@@ -1,0 +1,11 @@
+node_modules
+.env
+.env.*
+!.env.example
+/data/
+!src/data/
+uploads/documents/*
+!uploads/documents/.gitkeep
+uploads/temp/*
+!uploads/temp/.gitkeep
+*.log

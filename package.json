@@ -1,0 +1,15 @@
+{
+  "name": "carboniq-root",
+  "version": "1.0.0",
+  "description": "CarbonIQ - Intelligent Enterprise Carbon Accounting Engine for Indian SMEs",
+  "private": true,
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "seed": "npm --prefix server run seed:all",
+    "test": "npm --prefix server test",
+    "server": "npm --prefix server start",
+    "server:dev": "npm --prefix server run dev",
+    "client": "npm --prefix client dev",
+    "build:client": "npm --prefix client run build"
+  }
+}

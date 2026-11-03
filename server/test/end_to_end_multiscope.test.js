@@ -7,6 +7,7 @@ import { processSingleDocument } from '../src/services/processingPipeline.js';
 import { Document } from '../src/models/Document.js';
 import { ActivityRecord } from '../src/models/ActivityRecord.js';
 import { Company } from '../src/models/Company.js';
+import { connectDB } from '../src/config/db.js';
 import { generateSingleDocumentPDF, aggregateStatutoryData } from '../src/services/statutoryExportService.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -19,17 +20,19 @@ async function runEndToEndTest() {
   console.log('========================================================================\n');
 
   console.log('1. Connecting to MongoDB...');
-  await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/carboniq');
+  await connectDB();
   console.log(' Connected to MongoDB.');
 
   let company = await Company.findOne();
   if (!company) {
     company = await Company.create({
-      name: 'Apex Precision Engineering SME Ltd',
-      email: 'sustainability@apexprecision.com',
-      companyType: 'MANUFACTURING',
+      companyName: 'Apex Precision Engineering SME Ltd',
+      businessEmail: 'sustainability@apexprecision.com',
+      industryType: 'Manufacturing',
       gstin: '27AABCA1234F1Z5',
-      annualTurnoverInr: 150000000, // ₹15 Crore
+      businessSize: 'Medium',
+      phoneNumber: '+919876543210',
+      password: 'Password123!',
     });
   }
 
@@ -173,6 +176,7 @@ async function runEndToEndTest() {
   console.log('========================================================================\n');
 
   await mongoose.disconnect();
+  process.exit(0);
 }
 
 runEndToEndTest().catch((err) => {

@@ -3,6 +3,8 @@ import path from 'path';
 import mongoose from 'mongoose';
 import sharp from 'sharp';
 import { Company } from '../src/models/Company.js';
+import { PendingRegistration } from '../src/models/PendingRegistration.js';
+import { connectDB } from '../src/config/db.js';
 
 const API_BASE = 'http://127.0.0.1:5000/api';
 const FIXTURES_DIR = path.resolve('./test/fixtures');
@@ -85,9 +87,10 @@ async function runTestSuite() {
 
   // 4. Retrieve OTP from MongoDB for test verification & verify OTP
   try {
-    await mongoose.connect('mongodb://127.0.0.1:27017/carboniq');
+    await connectDB();
+    const pendingInDb = await PendingRegistration.findOne({ businessEmail: testEmail });
     const companyInDb = await Company.findOne({ businessEmail: testEmail });
-    const otpFromDb = companyInDb?.otpCode;
+    const otpFromDb = pendingInDb?.otpCode || companyInDb?.otpCode;
 
     if (!otpFromDb) {
       throw new Error('OTP was not generated in company record');
@@ -540,4 +543,9 @@ async function runTestSuite() {
   console.log('================================================================');
 }
 
-runTestSuite().catch(console.error);
+runTestSuite()
+  .then((passed) => process.exit(0))
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });

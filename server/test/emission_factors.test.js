@@ -535,4 +535,9 @@ async function runEmissionFactorTests() {
   }
 }
 
-runEmissionFactorTests().catch(console.error);
+runEmissionFactorTests()
+  .then(() => process.exit(0))
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });

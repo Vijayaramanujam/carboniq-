@@ -47,7 +47,7 @@ async function testSharpAndPreview() {
 
   // 3. Register SME and get JWT token
   const testEmail = `sharp_sme_${Date.now()}@test.in`;
-  await axios.post(`${API_BASE}/auth/register`, {
+  const regRes = await axios.post(`${API_BASE}/auth/register`, {
     companyName: 'Sharp Test SME',
     businessEmail: testEmail,
     phoneNumber: '+919876543210',
@@ -56,10 +56,10 @@ async function testSharpAndPreview() {
     businessSize: 'Small',
   });
 
-  await mongoose.connect('mongodb://127.0.0.1:27017/carboniq');
-  const compDoc = await Company.findOne({ businessEmail: testEmail });
-  const otp = compDoc.otpCode;
-  await mongoose.disconnect();
+
+
+  const otp = regRes.data.otpCode;
+
 
   const verifyRes = await axios.post(`${API_BASE}/auth/verify-otp`, {
     businessEmail: testEmail,
@@ -119,4 +119,9 @@ async function testSharpAndPreview() {
   console.log('====================================================');
 }
 
-testSharpAndPreview().catch(console.error);
+testSharpAndPreview()
+  .then(() => process.exit(0))
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });

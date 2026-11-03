@@ -6,8 +6,15 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "node --watch src/index.js",
+    "seed:factors": "node scripts/seedEmissionFactors.js",
+    "seed:exiobase": "node scripts/seedExiobase.js",
+    "seed:all": "node scripts/seedEmissionFactors.js && node scripts/seedExiobase.js",
     "seed:emission-factors": "node scripts/seedEmissionFactors.js",
-    "test:factors": "node test/emission_factors.test.js"
+    "test": "node test/emission_factors.test.js && node test/end_to_end_multiscope.test.js && node test/run_all_tests.js && node test/test_sharp_and_preview.js",
+    "test:factors": "node test/emission_factors.test.js",
+    "test:multiscope": "node test/end_to_end_multiscope.test.js",
+    "test:all": "node test/run_all_tests.js",
+    "test:sharp": "node test/test_sharp_and_preview.js"
   },
   "license": "MIT",
   "dependencies": {
@@ -26,5 +33,8 @@
     "pdfkit": "^0.20.2",
     "sharp": "^0.35.5",
     "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^11.3.0"
   }
 }

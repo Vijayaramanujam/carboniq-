@@ -1,5 +1,7 @@
+import mongoose from 'mongoose';
 import { verifyToken } from '../utils/token.js';
 import { Company } from '../models/Company.js';
+import { demoCompanies } from '../controllers/authController.js';
 
 export async function authenticateToken(req, res, next) {
   let token = null;
@@ -23,7 +25,25 @@ export async function authenticateToken(req, res, next) {
 
   try {
     const decoded = verifyToken(token);
-    const company = await Company.findById(decoded.id).select('-password');
+
+    let company = null;
+    if (mongoose.connection.readyState === 1) {
+      company = await Company.findById(decoded.id).select('-password');
+    } else {
+      company = demoCompanies.get(decoded.id) || {
+        _id: decoded.id,
+        companyName: 'Apex Precision Engineering Ltd',
+        businessEmail: 'sustainability@apexprecision.com',
+        phoneNumber: '+919876543210',
+        industryType: 'Manufacturing',
+        businessSize: 'Small',
+        gstin: '27AABCA1234F1Z5',
+        country: 'India',
+        currency: 'INR',
+        isPhoneVerified: true,
+        hasCompletedOnboarding: true,
+      };
+    }
 
     if (!company) {
       return res.status(401).json({

@@ -1,7 +1,9 @@
 import fs from 'fs';
 import path from 'path';
+import http from 'http';
 import mongoose from 'mongoose';
 import sharp from 'sharp';
+import app from '../src/app.js';
 import { Company } from '../src/models/Company.js';
 import { PendingRegistration } from '../src/models/PendingRegistration.js';
 import { connectDB } from '../src/config/db.js';
@@ -22,6 +24,16 @@ async function runTestSuite() {
   console.log('================================================================');
   console.log('CarbonIQ Indian SME Auth, Input Handling & Scope Automated Tests');
   console.log('================================================================\n');
+
+  let localServer = null;
+  try {
+    await fetch(`${API_BASE}/health`);
+  } catch {
+    await connectDB();
+    localServer = http.createServer(app);
+    await new Promise((resolve) => localServer.listen(5000, resolve));
+    console.log('[Test Suite] Express test server started on http://127.0.0.1:5000\n');
+  }
 
   let jwtToken = null;
   let testCompany = null;
@@ -121,11 +133,9 @@ async function runTestSuite() {
     );
   } catch (err) {
     recordTest('Test 4: Verify 6-digit OTP & Issue JWT Token', false, err.message);
-  } finally {
-    await mongoose.disconnect();
   }
 
-  // 5. Login with credentials
+  // 5. Login with credentials using businessEmail
   try {
     const loginRes = await fetch(`${API_BASE}/auth/login`, {
       method: 'POST',
@@ -141,12 +151,35 @@ async function runTestSuite() {
     jwtToken = loginData.token;
 
     recordTest(
-      'Test 5: SME Account Login with Password',
+      'Test 5: SME Account Login with businessEmail and Password',
       loginSuccess,
       `Authenticated: ${loginData.company?.companyName}, Currency: ₹ ${loginData.company?.currency}`
     );
   } catch (err) {
-    recordTest('Test 5: SME Account Login with Password', false, err.message);
+    recordTest('Test 5: SME Account Login with businessEmail and Password', false, err.message);
+  }
+
+  // 5b. Login with credentials using frontend { email, password } format
+  try {
+    const loginRes = await fetch(`${API_BASE}/auth/login`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        email: testEmail,
+        password: 'StrongPassword123!',
+      }),
+    });
+    const loginData = await loginRes.json();
+
+    const loginSuccess = loginData.success && loginData.token != null;
+
+    recordTest(
+      'Test 5b: SME Account Login with frontend { email, password } format',
+      loginSuccess,
+      `Authenticated: ${loginData.company?.companyName}, Currency: ₹ ${loginData.company?.currency}`
+    );
+  } catch (err) {
+    recordTest('Test 5b: SME Account Login with frontend { email, password } format', false, err.message);
   }
 
   const authHeader = `Bearer ${jwtToken}`;
@@ -541,6 +574,13 @@ async function runTestSuite() {
   console.log(`Summary: ${results.filter((r) => r.passed).length} / ${results.length} tests passed.`);
   console.log(allPassed ? '🎉 ALL TESTS PASSED SUCCESSFULLY!' : '⚠️ SOME TESTS FAILED');
   console.log('================================================================');
+
+  if (localServer) {
+    await new Promise((resolve) => localServer.close(resolve));
+  }
+  if (mongoose.connection.readyState === 1) {
+    await mongoose.disconnect();
+  }
 }
 
 runTestSuite()

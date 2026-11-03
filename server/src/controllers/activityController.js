@@ -1,7 +1,10 @@
+import mongoose from 'mongoose';
 import { ActivityRecord } from '../models/ActivityRecord.js';
 import { validateExtractedFields } from '../services/extractionService.js';
 import { mapCategoryToScope } from '../services/groqService.js';
 import { calculateCarbonEmissions } from '../services/carbonCalculationService.js';
+
+export const demoActivities = [];
 
 /**
  * Creates a manual activity record for authenticated Indian SME
@@ -59,8 +62,35 @@ export async function createActivity(req, res) {
         supplierName: fieldsToValidate.supplierName,
         description,
       });
-    } catch (calcErr) {
-      console.error('Error calculating emissions for manual activity:', calcErr);
+    } catch (calcError) {
+      console.warn('Emission calculation warning:', calcError.message);
+    }
+
+    if (mongoose.connection.readyState !== 1) {
+      const activity = {
+        _id: 'act_' + Date.now().toString(36),
+        companyId,
+        recordSource: 'MANUAL',
+        category,
+        scope: assignedScope,
+        activityDate: fieldsToValidate.activityDate || new Date(),
+        quantity: fieldsToValidate.quantity,
+        unit: fieldsToValidate.unit,
+        supplierName: fieldsToValidate.supplierName,
+        description: description || '',
+        categoryData: fieldsToValidate.categoryData,
+        carbonEmissions,
+        notes: notes ? notes.trim() : '',
+        verificationStatus: 'APPROVED',
+        createdAt: new Date(),
+      };
+      demoActivities.unshift(activity);
+
+      return res.status(201).json({
+        success: true,
+        message: 'Activity record created successfully in INR.',
+        activity,
+      });
     }
 
     const activity = new ActivityRecord({
@@ -69,11 +99,11 @@ export async function createActivity(req, res) {
       recordSource: 'MANUAL',
       category,
       scope: assignedScope,
-      activityDate: fieldsToValidate.activityDate,
+      activityDate: fieldsToValidate.activityDate || new Date(),
       quantity: fieldsToValidate.quantity,
       unit: fieldsToValidate.unit,
       supplierName: fieldsToValidate.supplierName,
-      description: description || 'Manually entered SME activity record',
+      description: description || '',
       categoryData: fieldsToValidate.categoryData,
       carbonEmissions,
       verificationStatus: 'APPROVED',
@@ -98,6 +128,15 @@ export async function createActivity(req, res) {
 export async function getActivities(req, res) {
   try {
     const { category, source, verificationStatus } = req.query;
+
+    if (mongoose.connection.readyState !== 1) {
+      let filtered = demoActivities.slice();
+      if (category) filtered = filtered.filter((a) => a.category === category);
+      if (source) filtered = filtered.filter((a) => a.recordSource === source);
+      if (verificationStatus) filtered = filtered.filter((a) => a.verificationStatus === verificationStatus);
+      return res.json({ success: true, count: filtered.length, activities: filtered });
+    }
+
     const filter = { companyId: req.company._id };
 
     if (category) filter.category = category;
@@ -120,40 +159,26 @@ export async function getActivities(req, res) {
  */
 export async function updateActivity(req, res) {
   try {
-    const activity = await ActivityRecord.findOne({ _id: req.params.id, companyId: req.company._id });
+    const { id } = req.params;
+    const updateData = req.body;
+
+    if (mongoose.connection.readyState !== 1) {
+      const act = demoActivities.find((a) => a._id === id);
+      if (act) Object.assign(act, updateData);
+      return res.json({ success: true, activity: act });
+    }
+
+    const activity = await ActivityRecord.findOneAndUpdate(
+      { _id: id, companyId: req.company._id },
+      { $set: updateData },
+      { new: true }
+    );
+
     if (!activity) {
-      return res.status(404).json({ success: false, error: 'Activity record not found or unauthorized.' });
+      return res.status(404).json({ success: false, error: 'Activity record not found.' });
     }
 
-    const updates = req.body;
-    const targetCategory = updates.category || activity.category;
-
-    if (updates.quantity != null) {
-      const num = parseFloat(updates.quantity);
-      if (isNaN(num) || num <= 0) {
-        return res.status(400).json({ success: false, error: 'Quantity must be a positive number.' });
-      }
-      activity.quantity = num;
-    }
-
-    if (updates.unit) activity.unit = updates.unit.trim();
-    if (updates.activityDate) activity.activityDate = new Date(updates.activityDate);
-    if (updates.supplierName !== undefined) activity.supplierName = updates.supplierName;
-    if (updates.description !== undefined) activity.description = updates.description;
-    if (updates.categoryData) {
-      activity.categoryData = {
-        ...activity.categoryData,
-        ...updates.categoryData,
-        currency: 'INR',
-      };
-    }
-    if (updates.verificationStatus) activity.verificationStatus = updates.verificationStatus;
-    if (updates.notes !== undefined) activity.notes = updates.notes;
-    activity.category = targetCategory;
-
-    await activity.save();
-
-    res.json({ success: true, message: 'Activity record updated.', activity });
+    res.json({ success: true, activity });
   } catch (error) {
     res.status(500).json({ success: false, error: error.message });
   }
@@ -164,11 +189,24 @@ export async function updateActivity(req, res) {
  */
 export async function deleteActivity(req, res) {
   try {
-    const activity = await ActivityRecord.findOneAndDelete({ _id: req.params.id, companyId: req.company._id });
-    if (!activity) {
-      return res.status(404).json({ success: false, error: 'Activity record not found or unauthorized.' });
+    const { id } = req.params;
+
+    if (mongoose.connection.readyState !== 1) {
+      const idx = demoActivities.findIndex((a) => a._id === id);
+      if (idx !== -1) demoActivities.splice(idx, 1);
+      return res.json({ success: true, message: 'Activity record deleted successfully.' });
     }
-    res.json({ success: true, message: 'Activity record deleted.' });
+
+    const activity = await ActivityRecord.findOneAndDelete({
+      _id: id,
+      companyId: req.company._id,
+    });
+
+    if (!activity) {
+      return res.status(404).json({ success: false, error: 'Activity record not found.' });
+    }
+
+    res.json({ success: true, message: 'Activity record deleted successfully.' });
   } catch (error) {
     res.status(500).json({ success: false, error: error.message });
   }

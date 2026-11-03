@@ -3,8 +3,8 @@ import path from 'path';
 import fs from 'fs';
 import crypto from 'crypto';
 
-const UPLOAD_BASE = path.resolve(process.env.UPLOAD_DIR || './uploads/documents');
-const TEMP_BASE = path.resolve('./uploads/temp');
+const UPLOAD_BASE = path.resolve(process.env.UPLOAD_DIR || (process.env.VERCEL ? '/tmp/uploads/documents' : './uploads/documents'));
+const TEMP_BASE = path.resolve(process.env.VERCEL ? '/tmp/uploads/temp' : './uploads/temp');
 
 // Ensure storage directories exist
 if (!fs.existsSync(UPLOAD_BASE)) {

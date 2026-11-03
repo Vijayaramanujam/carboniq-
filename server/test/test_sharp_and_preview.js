@@ -1,9 +1,12 @@
 import sharp from 'sharp';
 import fs from 'fs';
 import path from 'path';
+import http from 'http';
 import axios from 'axios';
 import FormData from 'form-data';
 import mongoose from 'mongoose';
+import app from '../src/app.js';
+import { connectDB } from '../src/config/db.js';
 import { Company } from '../src/models/Company.js';
 import { compressImageIfExceedsLimit } from '../src/services/imageCompressionService.js';
 
@@ -14,6 +17,16 @@ async function testSharpAndPreview() {
   console.log('====================================================');
   console.log('Testing Sharp Image Compression (>1MB) & Previews');
   console.log('====================================================\n');
+
+  let localServer = null;
+  try {
+    await axios.get(`${API_BASE}/health`);
+  } catch {
+    await connectDB();
+    localServer = http.createServer(app);
+    await new Promise((resolve) => localServer.listen(5000, resolve));
+    console.log('[Sharp Test] Express test server started on http://127.0.0.1:5000\n');
+  }
 
   // 1. Create a large test image > 1MB using sharp
   const largeImagePath = path.join(FIXTURES_DIR, 'large_receipt.png');
@@ -117,6 +130,13 @@ async function testSharpAndPreview() {
   console.log('\n====================================================');
   console.log('All Sharp & Preview Tests Completed Successfully!');
   console.log('====================================================');
+
+  if (localServer) {
+    await new Promise((resolve) => localServer.close(resolve));
+  }
+  if (mongoose.connection.readyState === 1) {
+    await mongoose.disconnect();
+  }
 }
 
 testSharpAndPreview()

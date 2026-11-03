@@ -3,15 +3,25 @@ import mongoose from 'mongoose';
 let embeddedMongo = null;
 
 export async function connectDB() {
-  const uri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/carboniq';
+  if (mongoose.connection.readyState === 1) {
+    return;
+  }
+
+  const isVercel = Boolean(process.env.VERCEL);
+  const uri = process.env.MONGODB_URI || (!isVercel ? 'mongodb://127.0.0.1:27017/carboniq' : '');
+
+  if (isVercel && !uri) {
+    console.warn('[MongoDB] Vercel environment detected without MONGODB_URI. Operating with in-memory demo fallback.');
+    return;
+  }
 
   try {
     await mongoose.connect(uri, {
-      serverSelectionTimeoutMS: 2000,
+      serverSelectionTimeoutMS: 3000,
     });
-    console.log(`[MongoDB] Connected successfully to ${uri}`);
+    console.log(`[MongoDB] Connected successfully to ${uri.replace(/\/\/([^:]+):([^@]+)@/, '//$1:****@')}`);
   } catch (error) {
-    if (uri.includes('127.0.0.1:27017') || uri.includes('localhost:27017')) {
+    if (!isVercel && (uri.includes('127.0.0.1:27017') || uri.includes('localhost:27017'))) {
       console.log('[MongoDB] Local MongoDB server not found. Launching embedded MongoDB service on port 27017...');
       try {
         const { MongoMemoryServer } = await import('mongodb-memory-server');
@@ -40,7 +50,9 @@ export async function connectDB() {
     }
 
     console.error(`[MongoDB] Connection error: ${error.message}`);
-    console.error(`[MongoDB] Please ensure MongoDB is running locally on port 27017 or update MONGODB_URI in .env`);
+    if (!isVercel) {
+      console.error(`[MongoDB] Please ensure MongoDB is running locally on port 27017 or update MONGODB_URI in .env`);
+    }
     throw error;
   }
 }

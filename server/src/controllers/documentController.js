@@ -95,7 +95,7 @@ export async function uploadZip(req, res) {
       return res.status(400).json({ success: false, error: 'No ZIP archive uploaded.' });
     }
 
-    const targetDir = path.resolve(process.env.UPLOAD_DIR || './uploads/documents');
+    const targetDir = path.resolve(process.env.UPLOAD_DIR || (process.env.VERCEL ? '/tmp/uploads/documents' : './uploads/documents'));
 
     let extractedFiles;
     try {

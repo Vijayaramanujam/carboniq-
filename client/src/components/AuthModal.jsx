@@ -260,6 +260,7 @@ export function AuthModal({ onAuthenticated, initialView = 'REGISTER', onClose }
     try {
       const res = await loginCompany({
         email: loginEmail,
+        businessEmail: loginEmail,
         password: loginPassword,
       });
 

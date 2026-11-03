@@ -50,18 +50,28 @@ export async function checkHealth() {
 
 // Authentication endpoints
 export async function registerCompany(data) {
+  const payload = {
+    ...data,
+    businessEmail: data.businessEmail || data.email,
+    email: data.email || data.businessEmail,
+  };
   return safeFetchJson(`${API_BASE}/auth/register`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data),
+    body: JSON.stringify(payload),
   });
 }
 
 export async function verifyCompanyOtp(data) {
+  const payload = {
+    ...data,
+    businessEmail: data.businessEmail || data.email,
+    email: data.email || data.businessEmail,
+  };
   const json = await safeFetchJson(`${API_BASE}/auth/verify-otp`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data),
+    body: JSON.stringify(payload),
   });
   if (json.success && json.token) {
     setAuthToken(json.token);
@@ -70,18 +80,28 @@ export async function verifyCompanyOtp(data) {
 }
 
 export async function resendCompanyOtp(data) {
+  const payload = {
+    ...data,
+    businessEmail: data.businessEmail || data.email,
+    email: data.email || data.businessEmail,
+  };
   return safeFetchJson(`${API_BASE}/auth/resend-otp`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data),
+    body: JSON.stringify(payload),
   });
 }
 
 export async function loginCompany(data) {
+  const payload = {
+    ...data,
+    businessEmail: data.businessEmail || data.email,
+    email: data.email || data.businessEmail,
+  };
   const json = await safeFetchJson(`${API_BASE}/auth/login`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(data),
+    body: JSON.stringify(payload),
   });
   if (json.success && json.token) {
     setAuthToken(json.token);
